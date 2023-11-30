@@ -22,3 +22,6 @@ go.work
 .log
 go.sum
 .idea
+.htbk
+.logs
+main
