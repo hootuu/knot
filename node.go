@@ -74,6 +74,9 @@ func (n *Node) doWaiting() {
 			time.Sleep(1 * time.Second)
 			continue
 		}
+		if msg.Local {
+			continue
+		}
 		n.doDealMessage(msg)
 	}
 }
