@@ -46,7 +46,7 @@ func (r *Rope) Submit(inv kt.Invariable) *errors.Error {
 	if err != nil {
 		return err
 	}
-	letter := twelve.NewLetter(inv.GetVN(), r.chain, dataBID, twelve.RequestArrow, r.node.Node().ID)
+	letter := twelve.NewLetter(inv.GetVN(), r.chain, dataBID, twelve.UnLock, twelve.RequestArrow, r.node.Node().ID)
 	err = letter.Sign(nd.Here().PRI)
 	if err != nil {
 		return err

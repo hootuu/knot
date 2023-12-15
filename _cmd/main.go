@@ -38,7 +38,7 @@ func main() {
 					fmt.Println(err)
 					return
 				}
-				time.Sleep(100 * time.Millisecond)
+				time.Sleep(5000 * time.Millisecond)
 			}
 		}()
 		return nil

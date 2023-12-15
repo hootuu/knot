@@ -24,4 +24,5 @@ go.sum
 .idea
 .htbk
 .logs
+.twelve
 main
